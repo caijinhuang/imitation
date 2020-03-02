@@ -3,6 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cjh.spring</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>parent</relativePath>
+    </parent>
 
     <groupId>com.cjh.spring</groupId>
     <artifactId>imitation</artifactId>
@@ -11,13 +17,6 @@
     <modules>
         <module>mvc</module>
         <module>patterns</module>
+        <module>parent</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <version>2.13.0</version>
-        </dependency>
-    </dependencies>
 </project>
